@@ -7,6 +7,9 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "vercel": {
+    "outputDirectory": "dist"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

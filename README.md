@@ -43,3 +43,7 @@ Shopora Maps is a comprehensive mapping application that enables field agents to
 - Service Worker API
 - Geolocation API
 - MediaRecorder API
+
+## Deployment
+
+The application is deployed on Vercel. Environment variables must be configured in Vercel dashboard for full functionality. See `VERCEL_SETUP.md` for configuration instructions.
