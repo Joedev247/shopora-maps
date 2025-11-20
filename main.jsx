@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import './index.css'
 import App from './App.jsx'
 
 window.__app_id = import.meta.env.VITE_APP_ID || "shopora-maps-dev";

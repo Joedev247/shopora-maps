@@ -106,7 +106,7 @@ const Modal = ({ isOpen, onClose, title, children }) => {
 
 const registerServiceWorker = () => {
   if (import.meta.env.PROD && 'serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js').catch(err => {
+    navigator.serviceWorker.register('/sw.js').catch(err => {
       console.warn('Service Worker registration failed:', err);
     });
   } else if (import.meta.env.DEV) {
