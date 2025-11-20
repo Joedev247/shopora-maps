@@ -499,7 +499,7 @@ const App = () => {
         <h2 className="text-2xl font-bold mb-5 text-gray-900 border-b border-gray-200 pb-3">Current Location</h2>
         <button
           onClick={getCurrentLocation}
-          className="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-semibold py-3 px-8 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+          className="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-semibold py-1.5 px-4 text-sm transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
         >
           Get My Location
         </button>
@@ -532,7 +532,7 @@ const App = () => {
           <button
             onClick={() => setShowAddModal(true)}
             disabled={!currentLocation}
-            className="bg-green-600 hover:bg-green-700 active:bg-green-800 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-semibold py-3 px-8 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 disabled:transform-none"
+            className="bg-green-600 hover:bg-green-700 active:bg-green-800 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-semibold py-1.5 px-4 text-sm transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 disabled:transform-none"
           >
             Add Landmark
           </button>
@@ -624,7 +624,7 @@ const App = () => {
           {offlineQueue.length > 0 && isOnline && (
             <button
               onClick={() => setShowSyncModal(true)}
-              className="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-semibold py-2 px-6 transition-all duration-200 shadow-md hover:shadow-lg"
+              className="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-semibold py-1.5 px-4 text-sm transition-all duration-200 shadow-md hover:shadow-lg"
             >
               Sync Now
             </button>
@@ -706,7 +706,7 @@ const App = () => {
             <div className="flex space-x-3">
               <button
                 onClick={() => setView('mapper')}
-                className={`px-6 py-2.5 font-semibold transition-all duration-200 ${
+                className={`px-4 py-1.5 text-sm font-semibold transition-all duration-200 ${
                   view === 'mapper'
                     ? 'bg-blue-600 text-white shadow-md'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-300'
@@ -716,7 +716,7 @@ const App = () => {
               </button>
               <button
                 onClick={() => setView('admin')}
-                className={`px-6 py-2.5 font-semibold transition-all duration-200 ${
+                className={`px-4 py-1.5 text-sm font-semibold transition-all duration-200 ${
                   view === 'admin'
                     ? 'bg-blue-600 text-white shadow-md'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-300'
@@ -779,7 +779,7 @@ const App = () => {
               {!isRecording && !voiceNote && (
                 <button
                   onClick={startRecording}
-                  className="bg-red-600 hover:bg-red-700 active:bg-red-800 text-white font-semibold py-2.5 px-6 transition-all duration-200 shadow-md hover:shadow-lg"
+                  className="bg-red-600 hover:bg-red-700 active:bg-red-800 text-white font-semibold py-1.5 px-4 text-sm transition-all duration-200 shadow-md hover:shadow-lg"
                 >
                   Start Recording
                 </button>
@@ -793,7 +793,7 @@ const App = () => {
                   </div>
                   <button
                     onClick={stopRecording}
-                    className="bg-gray-600 hover:bg-gray-700 active:bg-gray-800 text-white font-semibold py-2.5 px-6 transition-all duration-200 shadow-md hover:shadow-lg"
+                    className="bg-gray-600 hover:bg-gray-700 active:bg-gray-800 text-white font-semibold py-1.5 px-4 text-sm transition-all duration-200 shadow-md hover:shadow-lg"
                   >
                     Stop Recording
                   </button>
@@ -834,14 +834,14 @@ const App = () => {
                 setVoiceNote(null);
                 if (isRecording) stopRecording();
               }}
-              className="px-6 py-2.5 border border-gray-300 hover:bg-gray-50 transition-all duration-200 font-medium"
+              className="px-4 py-1.5 text-sm border border-gray-300 hover:bg-gray-50 transition-all duration-200 font-medium"
             >
               Cancel
             </button>
             <button
               onClick={handleAddLandmark}
               disabled={!newLandmarkName.trim() || !currentLocation}
-              className="px-6 py-2.5 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-semibold transition-all duration-200 shadow-md hover:shadow-lg disabled:shadow-none"
+              className="px-4 py-1.5 text-sm bg-blue-600 hover:bg-blue-700 active:bg-blue-800 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-semibold transition-all duration-200 shadow-md hover:shadow-lg disabled:shadow-none"
             >
               Save Landmark
             </button>
@@ -867,7 +867,7 @@ const App = () => {
             <div className="flex justify-end space-x-3 pt-4 border-t border-gray-200 mt-4">
               <button
                 onClick={() => setShowSyncModal(false)}
-                className="px-6 py-2.5 border border-gray-300 hover:bg-gray-50 transition-all duration-200 font-medium"
+                className="px-4 py-1.5 text-sm border border-gray-300 hover:bg-gray-50 transition-all duration-200 font-medium"
               >
                 Cancel
               </button>
